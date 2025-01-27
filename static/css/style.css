@@ -60,3 +60,228 @@
 .form-floating:hover label i {
     color: #fff;
 }
+
+:root {
+    --bg-dark: #1a1a1a;
+    --text-dark: #e0e0e0;
+    --card-bg: #2d2d2d;
+}
+
+body.dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+.dark-mode .card {
+    background-color: var(--card-bg);
+    border: 1px solid #404040;
+}
+
+.dark-mode .form-control {
+    background-color: #333;
+    border-color: #555;
+    color: white;
+}
+
+.dark-mode .btn-dark {
+    background-color: #4CAF50;
+    border: none;
+}
+
+/* Form kontrolleri için dark mode stilleri */
+.dark-mode .form-floating > .form-control {
+    background-color: #333;
+    border-color: #555;
+    color: #fff;
+}
+
+.dark-mode .form-floating > .form-control:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 0.25rem rgba(76, 175, 80, 0.25);
+}
+
+.dark-mode .form-floating > label {
+    color: #aaa;
+}
+
+.dark-mode .form-floating > .form-control:focus ~ label,
+.dark-mode .form-floating > .form-control:not(:placeholder-shown) ~ label {
+    color: #4CAF50;
+}
+
+/* Buton stilleri */
+.btn-success {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.btn-success:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}
+
+.btn-outline-secondary {
+    color: #aaa;
+    border-color: #555;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #333;
+    border-color: #666;
+    color: #fff;
+}
+
+/* Radio buton stilleri */
+.btn-check:checked + .btn-outline-light {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+    color: white;
+}
+
+.btn-outline-light {
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+.btn-outline-light:hover {
+    background-color: #333;
+    border-color: #4CAF50;
+    color: #fff;
+}
+
+.btn-group {
+    gap: 10px;
+}
+
+.btn-group .btn {
+    flex: 1;
+    border-radius: 4px !important;
+}
+
+/* Alert stilleri */
+.dark-mode .alert {
+    background-color: #2d2d2d;
+    border-color: #404040;
+    color: #e0e0e0;
+}
+
+.dark-mode .alert-success {
+    background-color: rgba(76, 175, 80, 0.1);
+    border-color: rgba(76, 175, 80, 0.2);
+    color: #4CAF50;
+}
+
+.dark-mode .alert-danger {
+    background-color: rgba(244, 67, 54, 0.1);
+    border-color: rgba(244, 67, 54, 0.2);
+    color: #f44336;
+}
+
+.dark-mode .alert-warning {
+    background-color: rgba(255, 152, 0, 0.1);
+    border-color: rgba(255, 152, 0, 0.2);
+    color: #ff9800;
+}
+
+/* Input group stilleri */
+.dark-mode .input-group-text {
+    background-color: #333;
+    border-color: #555;
+    color: #aaa;
+}
+
+/* Küçük metin stilleri */
+.dark-mode .text-muted {
+    color: #888 !important;
+}
+
+/* Card stilleri */
+.card.bg-dark {
+    background-color: #1a1a1a !important;
+    border: 1px solid #333;
+}
+
+.card.bg-dark .card-body {
+    padding: 1.5rem;
+}
+
+.card.bg-dark h5 {
+    color: #4CAF50;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+/* Fiyat Türü Seçimi Stilleri */
+.form-check {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.form-check-input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #666;
+    border-radius: 50%;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+    background: transparent;
+}
+
+.form-check-input:checked {
+    border-color: #4CAF50;
+    background: transparent;
+}
+
+.form-check-input:checked::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-check-label {
+    cursor: pointer;
+    font-size: 1.1em;
+    padding: 4px 8px;
+    margin: 0;
+    color: #e0e0e0;
+    display: flex;
+    align-items: center;
+}
+
+.form-check i {
+    font-size: 1.1em;
+    margin: 0 8px;
+    color: #e0e0e0;
+}
+
+/* Radio buton hover efekti */
+.form-check:hover .form-check-input:not(:checked) {
+    border-color: #4CAF50;
+}
+
+/* Radio buton container stilleri */
+.d-flex.gap-5 {
+    display: flex;
+    gap: 2rem !important;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Radio buton özel stilleri */
+.form-check-input[type="radio"] {
+    margin-right: 0.5rem;
+    margin-top: 0;
+}
