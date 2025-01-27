@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 from io import BytesIO
 import openpyxl
 
-main = Blueprint('main', __name__)
+bp = Blueprint('main', __name__)
 
 def cleanup_old_files():
     """1 saatten eski geçici dosyaları temizle"""
@@ -67,7 +67,7 @@ def check_file_access(file_stream):
 import atexit
 atexit.register(cleanup_old_files)
 
-@main.route('/admin', methods=['GET', 'POST'])
+@bp.route('/admin', methods=['GET', 'POST'])
 def admin():
     form = AdminForm()
     if form.validate_on_submit():
@@ -95,7 +95,7 @@ def admin():
             flash(f"Hata: {str(e)}", 'error')
     return render_template('admin.html', form=form)
 
-@main.route('/', methods=['GET', 'POST'])
+@bp.route('/', methods=['GET', 'POST'])
 def index():
     # Her istek öncesi eski dosyaları temizle
     cleanup_old_files()
