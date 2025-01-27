@@ -12,7 +12,10 @@ from io import BytesIO
 import openpyxl
 
 # Flask app configuration
-app = Flask(__name__)
+app = Flask(__name__,
+    template_folder='templates',
+    static_folder='static'
+)
 app.config['SECRET_KEY'] = 'your-secret-key-here'
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max file size
 
