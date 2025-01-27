@@ -1,21 +1,126 @@
-from flask import Flask, render_template, redirect, url_for, flash, jsonify, send_file, after_this_request
-from app.forms import UpdateForm, AdminForm
-from app.models import read_and_process_sut_files, save_to_json, update_excel_from_json
+from flask import Flask, render_template, redirect, url_for, flash, jsonify, send_file, after_this_request, request
+from flask_wtf import FlaskForm
+from wtforms import FileField, RadioField, SubmitField
+from wtforms.validators import DataRequired
 from werkzeug.utils import secure_filename
 import os
+import json
 import shutil
 import time
 from datetime import datetime, timedelta
 from io import BytesIO
 import openpyxl
 
-app = Flask(__name__, 
-    template_folder='app/templates',
-    static_folder='app/static'
-)
+# Flask app configuration
+app = Flask(__name__)
+app.config['SECRET_KEY'] = 'your-secret-key-here'
+app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max file size
 
-# Config
-app.config.from_object('config.Config')
+# Form classes
+class UpdateForm(FlaskForm):
+    excel_file = FileField('Excel Dosyası', validators=[DataRequired()])
+    hospital_type = RadioField('Hastane Türü',
+                             choices=[('ozel_hastane', 'Özel Hastane'),
+                                    ('ozel_tip_merkezi', 'Özel Tıp Merkezi')],
+                             validators=[DataRequired()])
+    submit = SubmitField('Güncelle')
+
+class AdminForm(FlaskForm):
+    submit = SubmitField('SUT Verilerini Güncelle')
+
+# Helper functions
+def read_and_process_sut_files():
+    """SUT Excel dosyalarını oku ve işle"""
+    try:
+        data_dir = os.path.join(os.getcwd(), 'data')
+        json_path = os.path.join(data_dir, 'sut_fiyatlari.json')
+        
+        if os.path.exists(json_path):
+            with open(json_path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        return None
+    except Exception as e:
+        print(f"Error reading SUT files: {str(e)}")
+        return None
+
+def save_to_json(data):
+    """Verileri JSON dosyasına kaydet"""
+    try:
+        data_dir = os.path.join(os.getcwd(), 'data')
+        os.makedirs(data_dir, exist_ok=True)
+        
+        json_path = os.path.join(data_dir, 'sut_fiyatlari.json')
+        
+        with open(json_path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=4)
+        return json_path
+    except Exception as e:
+        print(f"Error saving to JSON: {str(e)}")
+        return None
+
+def update_excel_from_json(excel_file, hospital_type):
+    """Excel dosyasını JSON verilerine göre güncelle"""
+    try:
+        # JSON verilerini oku
+        data_dir = os.path.join(os.getcwd(), 'data')
+        json_path = os.path.join(data_dir, 'sut_fiyatlari.json')
+        
+        if not os.path.exists(json_path):
+            return None
+            
+        with open(json_path, 'r', encoding='utf-8') as f:
+            sut_data = json.load(f)
+        
+        # Excel'i yükle
+        workbook = openpyxl.load_workbook(excel_file)
+        sheet = workbook.active
+        
+        # Başlık satırını bul
+        header_row = None
+        for row in sheet.iter_rows(min_row=1, max_row=10):
+            for cell in row:
+                if cell.value and isinstance(cell.value, str) and "SUT" in cell.value.upper():
+                    header_row = cell.row
+                    break
+            if header_row:
+                break
+                
+        if not header_row:
+            return None
+            
+        # Sütun başlıklarını bul
+        headers = {}
+        for cell in sheet[header_row]:
+            if cell.value:
+                value = str(cell.value).strip().lower()
+                if "sut" in value:
+                    headers['sut_kodu'] = cell.column_letter
+                elif "fiyat" in value:
+                    headers['fiyat'] = cell.column_letter
+                    
+        if 'sut_kodu' not in headers or 'fiyat' not in headers:
+            return None
+            
+        # Fiyatları güncelle
+        for row in sheet.iter_rows(min_row=header_row + 1):
+            sut_kodu = row[openpyxl.utils.column_index_from_string(headers['sut_kodu']) - 1].value
+            if sut_kodu:
+                sut_kodu = str(sut_kodu).strip()
+                if sut_kodu in sut_data:
+                    fiyat_cell = row[openpyxl.utils.column_index_from_string(headers['fiyat']) - 1]
+                    if hospital_type == 'ozel_hastane':
+                        fiyat_cell.value = float(sut_data[sut_kodu]) * 1.1
+                    else:  # ozel_tip_merkezi
+                        fiyat_cell.value = float(sut_data[sut_kodu])
+                        
+        # Sonucu BytesIO'ya kaydet
+        output = BytesIO()
+        workbook.save(output)
+        return output
+        
+    except Exception as e:
+        print(f"Error updating Excel: {str(e)}")
+        return None
 
 def cleanup_old_files():
     """1 saatten eski geçici dosyaları temizle"""
@@ -59,10 +164,7 @@ def check_file_access(file_stream):
     except Exception as e:
         return False
 
-# Uygulama kapanırken temizleme işlemini yap
-import atexit
-atexit.register(cleanup_old_files)
-
+# Routes
 @app.route('/admin', methods=['GET', 'POST'])
 def admin():
     form = AdminForm()
