@@ -172,7 +172,6 @@ def check_file_access(file_stream):
         return False
 
 # Routes
-@app.route('/admin', methods=['GET', 'POST'])
 def admin():
     form = AdminForm()
     if form.validate_on_submit():
@@ -194,7 +193,6 @@ def admin():
             flash(f"Hata: {str(e)}", 'error')
     return render_template('admin.html', form=form)
 
-@app.route('/', methods=['GET', 'POST'])
 def index():
     # Her istek öncesi eski dosyaları temizle
     cleanup_old_files()
@@ -263,4 +261,6 @@ def index():
     return render_template('index.html', form=form)
 
 if __name__ == '__main__':
+    app.add_url_rule('/admin', view_func=admin)
+    app.add_url_rule('/', view_func=index)
     app.run(debug=True)
