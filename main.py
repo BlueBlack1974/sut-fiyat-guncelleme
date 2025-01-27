@@ -16,8 +16,12 @@ app = Flask(__name__,
     template_folder='templates',
     static_folder='static'
 )
+
+# Config
 app.config['SECRET_KEY'] = 'your-secret-key-here'
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max file size
+app.config['UPLOAD_FOLDER'] = os.path.join(os.getcwd(), 'uploads')
+app.config['TEMP_FOLDER'] = os.path.join(os.getcwd(), 'temp')
 
 # Form classes
 class UpdateForm(FlaskForm):
