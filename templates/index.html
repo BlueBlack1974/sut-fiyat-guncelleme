@@ -190,62 +190,59 @@
                         responseType: 'blob'  // Binary veri için
                     },
                     success: function(response, status, xhr) {
-                        // Content type'a göre işlem yap
-                        const contentType = xhr.getResponseHeader('content-type');
-                        
-                        if (contentType && contentType.includes('application/json')) {
-                            // JSON yanıtı - hata durumu
-                            const reader = new FileReader();
-                            reader.onload = function() {
-                                const result = JSON.parse(this.result);
-                                $('#result').html(`
-                                    <div class="alert alert-danger">
-                                        <h5 class="alert-heading">
-                                            <i class="fas fa-exclamation-circle"></i> 
-                                            Hata!
-                                        </h5>
-                                        <p class="mb-0">${result.message}</p>
-                                    </div>
-                                `).removeClass('d-none');
-                            };
-                            reader.readAsText(response);
-                        } else {
-                            // Excel dosyası - başarılı durum
-                            const blob = new Blob([response], { 
-                                type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' 
-                            });
-                            const url = window.URL.createObjectURL(blob);
-                            const a = document.createElement('a');
-                            const filename = xhr.getResponseHeader('content-disposition')
-                                ?.split('filename=')[1]
-                                ?.replace(/"/g, '') || 'guncel.xlsx';
-                            
-                            a.href = url;
-                            a.download = filename;
-                            document.body.appendChild(a);
-                            a.click();
-                            window.URL.revokeObjectURL(url);
-                            document.body.removeChild(a);
-                            
-                            // Başarı mesajını göster
+                        // Eğer response boş ise
+                        if (!response || response.size === 0) {
                             $('#result').html(`
-                                <div class="alert alert-success">
-                                    <h5 class="alert-heading mb-2">
-                                        <i class="fas fa-check-circle"></i> 
-                                        Güncelleme başarılı! 
-                                        <small class="text-muted">
-                                            (${xhr.getResponseHeader('X-Updated-Rows')}/${xhr.getResponseHeader('X-Total-Rows')} satır güncellendi)
-                                        </small>
+                                <div class="alert alert-warning">
+                                    <h5 class="alert-heading">
+                                        <i class="fas fa-exclamation-triangle"></i> 
+                                        Uyarı
                                     </h5>
-                                    <p class="mb-0 text-muted">
-                                        ${xhr.getResponseHeader('X-Not-Found-Rows')} kod bulunamadı
-                                    </p>
+                                    <p class="mb-0">SUT verileri henüz yüklenmemiş. Lütfen önce yönetici panelinden SUT verilerini yükleyin.</p>
                                 </div>
                             `).removeClass('d-none');
-                            
-                            // Form elementlerini sıfırla
-                            $('#updateForm')[0].reset();
+                            return;
                         }
+                        
+                        // İstatistik bilgilerini al
+                        const updatedRows = xhr.getResponseHeader('X-Updated-Rows') || '0';
+                        const totalRows = xhr.getResponseHeader('X-Total-Rows') || '0';
+                        const notFoundRows = xhr.getResponseHeader('X-Not-Found-Rows') || '0';
+                        
+                        // Başarı mesajını göster
+                        $('#result').html(`
+                            <div class="alert alert-success">
+                                <h5 class="alert-heading mb-2">
+                                    <i class="fas fa-check-circle"></i> 
+                                    Güncelleme başarılı! 
+                                    <small class="text-muted">
+                                        (${updatedRows}/${totalRows} satır güncellendi)
+                                    </small>
+                                </h5>
+                                <p class="mb-0 text-muted">
+                                    ${notFoundRows} kod bulunamadı
+                                </p>
+                            </div>
+                        `).removeClass('d-none');
+                        
+                        // Dosya adını al
+                        const filename = xhr.getResponseHeader('Content-Disposition')?.split('filename=')[1]?.replace(/"/g, '') || 'guncel.xlsx';
+                        
+                        // Excel dosyasını indir
+                        const blob = new Blob([response], { 
+                            type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' 
+                        });
+                        const url = window.URL.createObjectURL(blob);
+                        const a = document.createElement('a');
+                        a.href = url;
+                        a.download = filename;
+                        document.body.appendChild(a);
+                        a.click();
+                        window.URL.revokeObjectURL(url);
+                        document.body.removeChild(a);
+                        
+                        // Form elementlerini sıfırla
+                        $('#updateForm')[0].reset();
                     },
                     error: function() {
                         // Sunucu hatası durumunda alert göster

@@ -43,7 +43,9 @@ class UpdateForm(FlaskForm):
     submit = SubmitField('Güncelle')
 
 class AdminForm(FlaskForm):
+    sut_file = FileField('SUT Dosyası')  # Dosya yükleme alanı
     submit = SubmitField('SUT Verilerini Güncelle')
+    clear_data = SubmitField('Verileri Temizle')  # Temizleme butonu eklendi
 
 # Uzmanlık dalları ve eş anlamlıları
 SPECIALTY_MAPPING = {
@@ -158,6 +160,7 @@ def update_excel_from_json(excel_file, hospital_type, code_column, description_c
         json_path = os.path.join(data_dir, 'sut_fiyatlari.json')
         
         if not os.path.exists(json_path):
+            # Boş değerler yerine 0 dön
             return None, 0, 0
             
         with open(json_path, 'r', encoding='utf-8') as f:
@@ -168,38 +171,40 @@ def update_excel_from_json(excel_file, hospital_type, code_column, description_c
         specialty_prices = {}
         
         # Ek2a listesinden uzmanlık dalı fiyatlarını al
-        if 'ek2a' in json_data:
-            latest_date = max(json_data['ek2a'].keys())
-            for item in json_data['ek2a'][latest_date]:
-                if isinstance(item, dict) and 'uzmanlik_dali' in item:
-                    specialty = item['uzmanlik_dali']
-                    if hospital_type == 'ozel_hastane':
-                        price = item['oh_kdv_dahil'] if price_type == 'dahil' else item['oh_kdv_haric']
-                    else:  # ozel_tip_merkezi
-                        price = item['otm_kdv_dahil'] if price_type == 'dahil' else item['otm_kdv_haric']
-                    specialty_prices[specialty] = price
-            print(f"\nEk2a'dan {len(specialty_prices)} uzmanlık dalı fiyatı yüklendi")
-            print("Yüklenen uzmanlık dalları ve fiyatları:")
-            for specialty, price in specialty_prices.items():
-                print(f"{specialty}: {price}")
+        if 'ek2a' in json_data and json_data['ek2a']:  # json_data['ek2a'] boş değilse
+            latest_date = max(json_data['ek2a'].keys()) if json_data['ek2a'] else None
+            if latest_date and json_data['ek2a'][latest_date]:
+                for item in json_data['ek2a'][latest_date]:
+                    if isinstance(item, dict) and 'uzmanlik_dali' in item:
+                        specialty = item['uzmanlik_dali']
+                        if hospital_type == 'ozel_hastane':
+                            price = item['oh_kdv_dahil'] if price_type == 'dahil' else item['oh_kdv_haric']
+                        else:  # ozel_tip_merkezi
+                            price = item['otm_kdv_dahil'] if price_type == 'dahil' else item['otm_kdv_haric']
+                        specialty_prices[specialty] = price
+                print(f"\nEk2a'dan {len(specialty_prices)} uzmanlık dalı fiyatı yüklendi")
+                print("Yüklenen uzmanlık dalları ve fiyatları:")
+                for specialty, price in specialty_prices.items():
+                    print(f"{specialty}: {price}")
         
         # Ek2b ve Ek2c listelerinden fiyatları al
         for liste_turu in ['ek2b', 'ek2c']:
-            if liste_turu in json_data:
-                latest_date = max(json_data[liste_turu].keys())
-                print(f"\n{liste_turu.upper()} Listesi:")
-                items = json_data[liste_turu][latest_date]
-                
-                for item in items:
-                    if isinstance(item, dict) and 'islem_kodu' in item:
-                        code = str(item['islem_kodu']).strip()
-                        if code != 'P520030':  # P520030 dışındaki kodlar için
-                            if price_type == 'dahil':
-                                fiyat = item['kdv_dahil_fiyat']
-                            else:
-                                fiyat = item['kdv_haric_fiyat']
-                            sut_data[code] = fiyat
-                            print(f"- {code}: {fiyat} TL")
+            if liste_turu in json_data and json_data[liste_turu]:  # json_data[liste_turu] boş değilse
+                latest_date = max(json_data[liste_turu].keys()) if json_data[liste_turu] else None
+                if latest_date and json_data[liste_turu][latest_date]:
+                    print(f"\n{liste_turu.upper()} Listesi:")
+                    items = json_data[liste_turu][latest_date]
+                    
+                    for item in items:
+                        if isinstance(item, dict) and 'islem_kodu' in item:
+                            code = str(item['islem_kodu']).strip()
+                            if code != 'P520030':  # P520030 dışındaki kodlar için
+                                if price_type == 'dahil':
+                                    fiyat = item['kdv_dahil_fiyat']
+                                else:
+                                    fiyat = item['kdv_haric_fiyat']
+                                sut_data[code] = fiyat
+                                print(f"- {code}: {fiyat} TL")
         
         # Excel'i yükle
         try:
@@ -334,27 +339,413 @@ def check_file_access(file_stream):
     except Exception as e:
         return False
 
+def read_and_process_sut_files():
+    """SUT dosyalarını okur ve işler"""
+    try:
+        json_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', 'sut_fiyatlari.json')
+        
+        # Eğer dosya varsa, mevcut verileri oku
+        if os.path.exists(json_path):
+            with open(json_path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        
+        # Dosya yoksa yeni yapı oluştur
+        return {
+            'ek2a': {},
+            'ek2b': {},
+            'ek2c': {}
+        }
+    except Exception as e:
+        print(f"Hata: {str(e)}")
+        return None
+
+def save_to_json(data):
+    """Verileri JSON dosyasına kaydeder"""
+    try:
+        json_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', 'sut_fiyatlari.json')
+        with open(json_path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=4)
+        return json_path
+    except Exception as e:
+        print(f"JSON kaydetme hatası: {str(e)}")
+        return None
+
+def process_ek2a(df):
+    """Ek2a Excel dosyasını işler"""
+    try:
+        # Başlık satırı 3. satır (index=2)
+        header_row = 2
+        
+        # Kolonları belirle
+        df.columns = df.iloc[header_row]
+        df = df.iloc[header_row + 1:]  # Veriler 4. satırdan başlıyor
+        
+        # Kolon isimlerini bul
+        uzmanlik_kolonu = None
+        oh_kolonu = None
+        otm_kolonu = None
+        
+        for col in df.columns:
+            if not isinstance(col, str):
+                continue
+                
+            col_clean = str(col).upper().strip()
+            if col_clean == "UZMANLIK DALLARI":
+                uzmanlik_kolonu = col
+            elif col_clean == "ÖH":
+                oh_kolonu = col
+            elif col_clean == "ÖTM":
+                otm_kolonu = col
+        
+        if not uzmanlik_kolonu or (not oh_kolonu and not otm_kolonu):
+            raise ValueError("Gerekli kolonlar bulunamadı (UZMANLIK DALLARI ve ÖH/ÖTM)")
+        
+        # Veriyi işle
+        uzmanlik_dallari = []
+        for _, row in df.iterrows():
+            try:
+                uzmanlik = str(row[uzmanlik_kolonu]).strip() if pd.notna(row[uzmanlik_kolonu]) else None
+                oh = str(row[oh_kolonu]).strip() if oh_kolonu and pd.notna(row[oh_kolonu]) else None
+                otm = str(row[otm_kolonu]).strip() if otm_kolonu and pd.notna(row[otm_kolonu]) else None
+                
+                # Boş satırları atla
+                if not uzmanlik:
+                    continue
+                    
+                # Sayısal değerleri al
+                oh_deger = float(oh) if oh and oh not in ["*", ""] and pd.notna(oh) else 0.0
+                otm_deger = float(otm) if otm and otm not in ["*", ""] and pd.notna(otm) else 0.0
+                
+                # KDV hesapla (%10)
+                oh_kdv_dahil = round(oh_deger * 1.1, 1) if oh_deger > 0 else 0.0
+                otm_kdv_dahil = round(otm_deger * 1.1, 1) if otm_deger > 0 else 0.0
+                
+                # En az bir değer varsa ekle
+                if oh_deger > 0 or otm_deger > 0:
+                    uzmanlik_dallari.append({
+                        'uzmanlik_dali': uzmanlik,
+                        'oh_kdv_haric': oh_deger,
+                        'oh_kdv_dahil': oh_kdv_dahil,
+                        'otm_kdv_haric': otm_deger,
+                        'otm_kdv_dahil': otm_kdv_dahil,
+                        'liste_turu': 'ek2a'
+                    })
+                    
+            except Exception as e:
+                print(f"Satır işleme hatası: {str(e)}")
+                continue
+                
+        if not uzmanlik_dallari:
+            raise ValueError("İşlenebilir veri bulunamadı")
+            
+        return uzmanlik_dallari
+        
+    except Exception as e:
+        print(f"Ek2a işleme hatası: {str(e)}")
+        return []
+
+def process_ek2b(df):
+    """Ek2b Excel dosyasını işler"""
+    try:
+        # Başlık satırını bul (ilk 20 satıra bak)
+        header_row = None
+        for i in range(min(20, len(df))):
+            row = df.iloc[i]
+            # Debug için satırı yazdır
+            print(f"{i}. satır str: {[str(x) for x in row if pd.notna(x)]}")
+            
+            # Boş olmayan değerleri al
+            values = [str(x).strip() for x in row if pd.notna(x)]
+            # Debug için values'u yazdır
+            print(f"{i}. satır values: {values}")
+            
+            # "İŞLEM KODU" ve "İŞLEM PUANI" kelimeleri geçen satırı bul
+            if any("İŞLEM KODU" in str(x).upper() for x in values) and any("İŞLEM PUANI" in str(x).upper() for x in values):
+                header_row = i
+                break
+        
+        if header_row is None:
+            raise ValueError("Başlık satırı bulunamadı")
+        
+        # Kolonları belirle
+        df.columns = df.iloc[header_row]
+        df = df.iloc[header_row + 1:]
+        
+        # Kolon isimlerini bul
+        kod_kolonu = None
+        puan_kolonu = None
+        
+        for col in df.columns:
+            if not isinstance(col, str):
+                continue
+                
+            col_upper = str(col).upper().strip()
+            if "İŞLEM KODU" in col_upper:
+                kod_kolonu = col
+            elif "İŞLEM PUANI" in col_upper:
+                puan_kolonu = col
+        
+        if kod_kolonu is None or puan_kolonu is None:
+            raise ValueError(f"Gerekli kolonlar bulunamadı. Bulunan kolonlar: {list(df.columns)}")
+        
+        # Veriyi işle
+        islemler = []
+        for _, row in df.iterrows():
+            try:
+                kod = str(row[kod_kolonu]).strip() if pd.notna(row[kod_kolonu]) else ''
+                puan = row[puan_kolonu] if pd.notna(row[puan_kolonu]) else None
+                
+                # Boş satırları ve geçersiz kodları atla
+                if not kod or not isinstance(kod, str):
+                    continue
+                
+                # Kod temizleme
+                # 1. Başta harf varsa koru
+                # 2. Sayısal kısmı bul
+                # 3. Sonraki karakterleri at
+                kod_temiz = ''
+                sayisal_kisim_basladi = False
+                
+                for c in kod:
+                    if c.isdigit():
+                        sayisal_kisim_basladi = True
+                        kod_temiz += c
+                    elif not sayisal_kisim_basladi and c.isalpha():
+                        # Sayısal kısım başlamadan önceki harfleri koru
+                        kod_temiz += c
+                    elif sayisal_kisim_basladi:
+                        # Sayısal kısımdan sonraki karakterleri yoksay
+                        break
+                
+                if not kod_temiz or not any(c.isdigit() for c in kod_temiz):
+                    continue
+                
+                # Sayısal değer kontrolü
+                if isinstance(puan, str):
+                    puan = puan.replace(',', '.').strip()
+                    if not puan.replace('.', '').isdigit():
+                        continue
+                    puan = float(puan)
+                elif not isinstance(puan, (int, float)) or pd.isna(puan):
+                    continue
+                
+                # Fiyatları hesapla
+                kdv_haric = round(float(puan) * 0.593, 2)
+                kdv_dahil = round(kdv_haric * 1.1, 4)
+                
+                islemler.append({
+                    'islem_kodu': kod_temiz,
+                    'kdv_haric_fiyat': kdv_haric,
+                    'kdv_dahil_fiyat': kdv_dahil,
+                    'liste_turu': 'ek2b'
+                })
+            except (ValueError, TypeError) as e:
+                print(f"Satır işleme hatası: {str(e)}")
+                continue
+                
+        if not islemler:
+            raise ValueError("İşlenebilir veri bulunamadı")
+                
+        return islemler
+    except Exception as e:
+        print(f"Ek2b işleme hatası: {str(e)}")
+        return []
+
+def process_ek2c(df):
+    """Ek2c Excel dosyasını işler"""
+    try:
+        # Başlık satırını bul (ilk 20 satıra bak)
+        header_row = None
+        for i in range(min(20, len(df))):
+            row = df.iloc[i]
+            # Debug için satırı yazdır
+            print(f"{i}. satır str: {[str(x) for x in row if pd.notna(x)]}")
+            
+            # Boş olmayan değerleri al
+            values = [str(x).strip() for x in row if pd.notna(x)]
+            # Debug için values'u yazdır
+            print(f"{i}. satır values: {values}")
+            
+            # "İŞLEM KODU" ve "İŞLEM PUANI" kelimeleri geçen satırı bul
+            if any("İŞLEM KODU" in str(x).upper() for x in values) and any("İŞLEM PUANI" in str(x).upper() for x in values):
+                header_row = i
+                break
+        
+        if header_row is None:
+            raise ValueError("Başlık satırı bulunamadı")
+        
+        # Kolonları belirle
+        df.columns = df.iloc[header_row]
+        df = df.iloc[header_row + 1:]
+        
+        # Kolon isimlerini bul
+        kod_kolonu = None
+        puan_kolonu = None
+        
+        for col in df.columns:
+            if not isinstance(col, str):
+                continue
+                
+            col_upper = str(col).upper().strip()
+            if "İŞLEM KODU" in col_upper:
+                kod_kolonu = col
+            elif "İŞLEM PUANI" in col_upper:
+                puan_kolonu = col
+        
+        if kod_kolonu is None or puan_kolonu is None:
+            raise ValueError(f"Gerekli kolonlar bulunamadı. Bulunan kolonlar: {list(df.columns)}")
+        
+        # Veriyi işle
+        islemler = []
+        for _, row in df.iterrows():
+            try:
+                kod = str(row[kod_kolonu]).strip() if pd.notna(row[kod_kolonu]) else ''
+                puan = row[puan_kolonu] if pd.notna(row[puan_kolonu]) else None
+                
+                # Boş satırları ve geçersiz kodları atla
+                if not kod or not isinstance(kod, str):
+                    continue
+                
+                # Kod temizleme
+                # 1. Başta harf varsa koru
+                # 2. Sayısal kısmı bul
+                # 3. Sonraki karakterleri at
+                kod_temiz = ''
+                sayisal_kisim_basladi = False
+                
+                for c in kod:
+                    if c.isdigit():
+                        sayisal_kisim_basladi = True
+                        kod_temiz += c
+                    elif not sayisal_kisim_basladi and c.isalpha():
+                        # Sayısal kısım başlamadan önceki harfleri koru
+                        kod_temiz += c
+                    elif sayisal_kisim_basladi:
+                        # Sayısal kısımdan sonraki karakterleri yoksay
+                        break
+                
+                if not kod_temiz or not any(c.isdigit() for c in kod_temiz):
+                    continue
+                
+                # Sayısal değer kontrolü
+                if isinstance(puan, str):
+                    puan = puan.replace(',', '.').strip()
+                    if not puan.replace('.', '').isdigit():
+                        continue
+                    puan = float(puan)
+                elif not isinstance(puan, (int, float)) or pd.isna(puan):
+                    continue
+                
+                # Fiyatları hesapla
+                kdv_haric = round(float(puan) * 0.593, 2)
+                kdv_dahil = round(kdv_haric * 1.1, 4)
+                
+                islemler.append({
+                    'islem_kodu': kod_temiz,
+                    'kdv_haric_fiyat': kdv_haric,
+                    'kdv_dahil_fiyat': kdv_dahil,
+                    'liste_turu': 'ek2c'
+                })
+            except (ValueError, TypeError) as e:
+                print(f"Satır işleme hatası: {str(e)}")
+                continue
+                
+        if not islemler:
+            raise ValueError("İşlenebilir veri bulunamadı")
+                
+        return islemler
+    except Exception as e:
+        print(f"Ek2c işleme hatası: {str(e)}")
+        return []
+
 # Routes
 @app.route('/admin', methods=['GET', 'POST'])
 def admin():
     form = AdminForm()
     if form.validate_on_submit():
-        try:
-            sut_data = read_and_process_sut_files()
-            if sut_data:
-                # JSON dosyasına kaydet
-                json_file = save_to_json(sut_data)
+        if form.clear_data.data:  # Temizle butonuna basıldıysa
+            try:
+                # Boş JSON yapısını oluştur
+                empty_data = {
+                    'ek2a': {},
+                    'ek2b': {},
+                    'ek2c': {}
+                }
+                # JSON dosyasını temizle
+                save_to_json(empty_data)
+                flash('Tüm veriler başarıyla temizlendi.', 'success')
+            except Exception as e:
+                flash(f'Veriler temizlenirken bir hata oluştu: {str(e)}', 'error')
+            return redirect(url_for('admin'))
+            
+        if form.sut_file.data:
+            # Dosya seçildi mi kontrol et
+            if not form.sut_file.data.filename:
+                flash('Lütfen bir dosya seçin.', 'error')
+                return redirect(url_for('admin'))
+            
+            # Dosya adını kontrol et
+            filename = form.sut_file.data.filename
+            if not (filename.startswith('EK-2A') or filename.startswith('EK-2B') or filename.startswith('EK-2C')):
+                flash('Dosya adı EK-2A, EK-2B veya EK-2C ile başlamalıdır.', 'error')
+                return redirect(url_for('admin'))
+            
+            try:
+                # Geçici dosyayı kaydet
+                temp_path = os.path.join(app.config['UPLOAD_FOLDER'], secure_filename(filename))
+                form.sut_file.data.save(temp_path)
                 
-                if json_file:
-                    flash('SUT verileri başarıyla güncellendi!', 'success')
-                    return redirect(url_for('index'))
+                # Excel dosyasını oku
+                df = pd.read_excel(temp_path)
+                
+                # Debug için yazdır
+                print("\nKolon isimleri:", df.columns.tolist())
+                print("\n3. satır (index=2):", df.iloc[2].tolist())
+                print("\n3. satır str:", [str(x) for x in df.iloc[2].tolist()])
+                
+                # Dosya türüne göre işle
+                if filename.startswith('EK-2A'):
+                    data = process_ek2a(df)
+                elif filename.startswith('EK-2B'):
+                    data = process_ek2b(df)
+                else:  # EK-2C
+                    data = process_ek2c(df)
+                
+                if data:
+                    # JSON dosyasını oku
+                    json_data = read_and_process_sut_files()
+                    if json_data is None:
+                        json_data = {'ek2a': {}, 'ek2b': {}, 'ek2c': {}}
+                    
+                    # Güncel tarihi al
+                    current_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                    
+                    # Dosya türüne göre güncelle
+                    if filename.startswith('EK-2A'):
+                        json_data['ek2a'][current_date] = data
+                    elif filename.startswith('EK-2B'):
+                        json_data['ek2b'][current_date] = data
+                    else:  # EK-2C
+                        json_data['ek2c'][current_date] = data
+                    
+                    # JSON'a kaydet
+                    save_to_json(json_data)
+                    flash('Veriler başarıyla güncellendi.', 'success')
                 else:
-                    flash('JSON dosyası oluşturulamadı!', 'error')
-            else:
-                flash('SUT dosyaları okunamadı!', 'error')
+                    flash('Veri işlenirken bir hata oluştu.', 'error')
                 
-        except Exception as e:
-            flash(f"Hata: {str(e)}", 'error')
+                # Geçici dosyayı sil
+                if os.path.exists(temp_path):
+                    os.remove(temp_path)
+                
+            except Exception as e:
+                flash(f'Hata: {str(e)}', 'error')
+                # Hata durumunda da geçici dosyayı silmeye çalış
+                if os.path.exists(temp_path):
+                    os.remove(temp_path)
+            
+            return redirect(url_for('admin'))
+    
     return render_template('admin.html', form=form)
 
 @app.route('/', methods=['GET', 'POST'])
@@ -392,16 +783,23 @@ def index():
                 
             excel_buffer, updated_rows, not_found_rows = result
             
-            # Güncellenmiş dosyayı kullanıcıya gönder
-            original_name = os.path.splitext(excel_file.filename)[0]
-            download_name = f"{original_name}_guncel.xlsx"
-            
-            return send_file(
+            # Response'u hazırla
+            response = send_file(
                 excel_buffer,
                 mimetype='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
                 as_attachment=True,
-                download_name=download_name
+                download_name=os.path.splitext(excel_file.filename)[0] + '_guncel.xlsx'
             )
+            
+            # Access-Control-Expose-Headers ekle
+            response.headers['Access-Control-Expose-Headers'] = 'Content-Disposition, X-Updated-Rows, X-Total-Rows, X-Not-Found-Rows'
+            
+            # İstatistik bilgilerini header'a ekle
+            response.headers['X-Updated-Rows'] = str(updated_rows)
+            response.headers['X-Total-Rows'] = str(updated_rows + not_found_rows)
+            response.headers['X-Not-Found-Rows'] = str(not_found_rows)
+            
+            return response
             
         except Exception as e:
             print(f"Hata oluştu: {str(e)}")
