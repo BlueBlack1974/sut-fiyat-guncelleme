@@ -1,0 +1,30 @@
+# PythonAnywhere Yapılandırma Adımları
+
+1. Konsol'da çalıştırılacak komutlar:
+git clone https://github.com/BlueBlack1974/sut-fiyat-guncelleme.git
+cd sut-fiyat-guncelleme
+python3.11 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+2. Web app yapılandırması:
+- Source code: /home/KULLANICIADI/sut-fiyat-guncelleme
+- Working directory: /home/KULLANICIADI/sut-fiyat-guncelleme
+- WSGI configuration file içeriği:
+
+import sys
+path = '/home/KULLANICIADI/sut-fiyat-guncelleme'
+if path not in sys.path:
+    sys.path.append(path)
+
+from main import app as application
+application.secret_key = 'your-secret-key-here'
+
+3. Gerekli dizinler:
+mkdir /home/KULLANICIADI/sut-fiyat-guncelleme/data
+mkdir /home/KULLANICIADI/sut-fiyat-guncelleme/uploads
+mkdir /home/KULLANICIADI/sut-fiyat-guncelleme/temp
+
+4. Environment variables:
+FLASK_APP=main.py
+FLASK_ENV=production
