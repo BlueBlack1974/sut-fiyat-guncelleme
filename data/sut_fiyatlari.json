@@ -1,6 +1,6 @@
 {
     "ek2a": {
-        "2025-01-28 14:12:38": [
+        "2025-03-17 13:27:59": [
             {
                 "uzmanlik_dali": "Anesteziyoloji ve Reanimasyon",
                 "oh_kdv_haric": 109.0,
@@ -572,7 +572,7 @@
         ]
     },
     "ek2b": {
-        "2025-01-28 14:12:51": [
+        "2025-03-17 13:05:43": [
             {
                 "islem_kodu": "510010",
                 "kdv_haric_fiyat": 185.3,
@@ -745,6 +745,18 @@
                 "islem_kodu": "530060",
                 "kdv_haric_fiyat": 467.44,
                 "kdv_dahil_fiyat": 514.184,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "530060",
+                "kdv_haric_fiyat": 467.44,
+                "kdv_dahil_fiyat": 514.184,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "530070",
+                "kdv_haric_fiyat": 228.73,
+                "kdv_dahil_fiyat": 251.603,
                 "liste_turu": "ek2b"
             },
             {
@@ -1426,9 +1438,27 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "550200",
+                "kdv_haric_fiyat": 6097.04,
+                "kdv_dahil_fiyat": 6706.744,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "550210",
                 "kdv_haric_fiyat": 3314.06,
                 "kdv_dahil_fiyat": 3645.466,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "550210",
+                "kdv_haric_fiyat": 3314.06,
+                "kdv_dahil_fiyat": 3645.466,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "550220",
+                "kdv_haric_fiyat": 1988.76,
+                "kdv_dahil_fiyat": 2187.636,
                 "liste_turu": "ek2b"
             },
             {
@@ -1444,6 +1474,18 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "550230",
+                "kdv_haric_fiyat": 921.1,
+                "kdv_dahil_fiyat": 1013.21,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "550240",
+                "kdv_haric_fiyat": 531.32,
+                "kdv_dahil_fiyat": 584.452,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "550240",
                 "kdv_haric_fiyat": 531.32,
                 "kdv_dahil_fiyat": 584.452,
@@ -1453,6 +1495,18 @@
                 "islem_kodu": "550250",
                 "kdv_haric_fiyat": 331.43,
                 "kdv_dahil_fiyat": 364.573,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "550250",
+                "kdv_haric_fiyat": 331.43,
+                "kdv_dahil_fiyat": 364.573,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "550260",
+                "kdv_haric_fiyat": 220.95,
+                "kdv_dahil_fiyat": 243.045,
                 "liste_turu": "ek2b"
             },
             {
@@ -1510,9 +1564,27 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "550339",
+                "kdv_haric_fiyat": 9145.57,
+                "kdv_dahil_fiyat": 10060.127,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "550341",
                 "kdv_haric_fiyat": 4971.1,
                 "kdv_dahil_fiyat": 5468.21,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "550341",
+                "kdv_haric_fiyat": 4971.1,
+                "kdv_dahil_fiyat": 5468.21,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "550342",
+                "kdv_haric_fiyat": 2983.17,
+                "kdv_dahil_fiyat": 3281.487,
                 "liste_turu": "ek2b"
             },
             {
@@ -1528,6 +1600,18 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "550343",
+                "kdv_haric_fiyat": 1381.64,
+                "kdv_dahil_fiyat": 1519.804,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "550344",
+                "kdv_haric_fiyat": 796.98,
+                "kdv_dahil_fiyat": 876.678,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "550344",
                 "kdv_haric_fiyat": 796.98,
                 "kdv_dahil_fiyat": 876.678,
@@ -1537,6 +1621,18 @@
                 "islem_kodu": "550345",
                 "kdv_haric_fiyat": 497.17,
                 "kdv_dahil_fiyat": 546.887,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "550345",
+                "kdv_haric_fiyat": 497.17,
+                "kdv_dahil_fiyat": 546.887,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "550346",
+                "kdv_haric_fiyat": 331.43,
+                "kdv_dahil_fiyat": 364.573,
                 "liste_turu": "ek2b"
             },
             {
@@ -2575,6 +2671,12 @@
                 "islem_kodu": "600800",
                 "kdv_haric_fiyat": 606.37,
                 "kdv_dahil_fiyat": 667.007,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "600830",
+                "kdv_haric_fiyat": 505.33,
+                "kdv_dahil_fiyat": 555.863,
                 "liste_turu": "ek2b"
             },
             {
@@ -3721,6 +3823,12 @@
                 "islem_kodu": "602650",
                 "kdv_haric_fiyat": 4680.79,
                 "kdv_dahil_fiyat": 5148.869,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "602660",
+                "kdv_haric_fiyat": 1896.02,
+                "kdv_dahil_fiyat": 2085.622,
                 "liste_turu": "ek2b"
             },
             {
@@ -7114,6 +7222,12 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "607910",
+                "kdv_haric_fiyat": 232.4,
+                "kdv_dahil_fiyat": 255.64,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "607920",
                 "kdv_haric_fiyat": 93.1,
                 "kdv_dahil_fiyat": 102.41,
@@ -7139,6 +7253,12 @@
             },
             {
                 "islem_kodu": "607934",
+                "kdv_haric_fiyat": 1057.9,
+                "kdv_dahil_fiyat": 1163.69,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "607935",
                 "kdv_haric_fiyat": 1057.9,
                 "kdv_dahil_fiyat": 1163.69,
                 "liste_turu": "ek2b"
@@ -7384,9 +7504,27 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "608300",
+                "kdv_haric_fiyat": 1061.21,
+                "kdv_dahil_fiyat": 1167.331,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "608310",
                 "kdv_haric_fiyat": 530.57,
                 "kdv_dahil_fiyat": 583.627,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "608310",
+                "kdv_haric_fiyat": 530.57,
+                "kdv_dahil_fiyat": 583.627,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "608320",
+                "kdv_haric_fiyat": 1344.18,
+                "kdv_dahil_fiyat": 1478.598,
                 "liste_turu": "ek2b"
             },
             {
@@ -7402,9 +7540,27 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "608330",
+                "kdv_haric_fiyat": 2688.38,
+                "kdv_dahil_fiyat": 2957.218,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "608340",
                 "kdv_haric_fiyat": 3226.06,
                 "kdv_dahil_fiyat": 3548.666,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "608340",
+                "kdv_haric_fiyat": 3226.06,
+                "kdv_dahil_fiyat": 3548.666,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "608350",
+                "kdv_haric_fiyat": 2150.71,
+                "kdv_dahil_fiyat": 2365.781,
                 "liste_turu": "ek2b"
             },
             {
@@ -7420,6 +7576,18 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "608360",
+                "kdv_haric_fiyat": 1344.18,
+                "kdv_dahil_fiyat": 1478.598,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "608370",
+                "kdv_haric_fiyat": 449.73,
+                "kdv_dahil_fiyat": 494.703,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "608370",
                 "kdv_haric_fiyat": 449.73,
                 "kdv_dahil_fiyat": 494.703,
@@ -7429,6 +7597,18 @@
                 "islem_kodu": "608371",
                 "kdv_haric_fiyat": 2277.46,
                 "kdv_dahil_fiyat": 2505.206,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "608371",
+                "kdv_haric_fiyat": 2277.46,
+                "kdv_dahil_fiyat": 2505.206,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "608372",
+                "kdv_haric_fiyat": 884.02,
+                "kdv_dahil_fiyat": 972.422,
                 "liste_turu": "ek2b"
             },
             {
@@ -13372,6 +13552,12 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "617051",
+                "kdv_haric_fiyat": 683.22,
+                "kdv_dahil_fiyat": 751.542,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "617052",
                 "kdv_haric_fiyat": 1366.46,
                 "kdv_dahil_fiyat": 1503.106,
@@ -13441,6 +13627,12 @@
                 "islem_kodu": "617160",
                 "kdv_haric_fiyat": 82.44,
                 "kdv_dahil_fiyat": 90.684,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "617170",
+                "kdv_haric_fiyat": 1139.88,
+                "kdv_dahil_fiyat": 1253.868,
                 "liste_turu": "ek2b"
             },
             {
@@ -14488,6 +14680,12 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "618630",
+                "kdv_haric_fiyat": 3094.88,
+                "kdv_dahil_fiyat": 3404.368,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "618640",
                 "kdv_haric_fiyat": 796.0,
                 "kdv_dahil_fiyat": 875.6,
@@ -14566,6 +14764,12 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "618740",
+                "kdv_haric_fiyat": 4572.99,
+                "kdv_dahil_fiyat": 5030.289,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "618750",
                 "kdv_haric_fiyat": 1688.85,
                 "kdv_dahil_fiyat": 1857.735,
@@ -14611,6 +14815,12 @@
                 "islem_kodu": "618820",
                 "kdv_haric_fiyat": 1058.51,
                 "kdv_dahil_fiyat": 1164.361,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "618830",
+                "kdv_haric_fiyat": 2117.01,
+                "kdv_dahil_fiyat": 2328.711,
                 "liste_turu": "ek2b"
             },
             {
@@ -14674,6 +14884,18 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "618910",
+                "kdv_haric_fiyat": 2321.28,
+                "kdv_dahil_fiyat": 2553.408,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "618920",
+                "kdv_haric_fiyat": 348.19,
+                "kdv_dahil_fiyat": 383.009,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "618920",
                 "kdv_haric_fiyat": 348.19,
                 "kdv_dahil_fiyat": 383.009,
@@ -14713,6 +14935,12 @@
                 "islem_kodu": "618980",
                 "kdv_haric_fiyat": 1058.51,
                 "kdv_dahil_fiyat": 1164.361,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "618990",
+                "kdv_haric_fiyat": 464.25,
+                "kdv_dahil_fiyat": 510.675,
                 "liste_turu": "ek2b"
             },
             {
@@ -14764,6 +14992,24 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "619060",
+                "kdv_haric_fiyat": 1764.36,
+                "kdv_dahil_fiyat": 1940.796,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "619070",
+                "kdv_haric_fiyat": 4233.44,
+                "kdv_dahil_fiyat": 4656.784,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "619070",
+                "kdv_haric_fiyat": 4233.44,
+                "kdv_dahil_fiyat": 4656.784,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "619070",
                 "kdv_haric_fiyat": 4233.44,
                 "kdv_dahil_fiyat": 4656.784,
@@ -14797,6 +15043,18 @@
                 "islem_kodu": "619120",
                 "kdv_haric_fiyat": 2117.01,
                 "kdv_dahil_fiyat": 2328.711,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "619120",
+                "kdv_haric_fiyat": 2117.01,
+                "kdv_dahil_fiyat": 2328.711,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "619130",
+                "kdv_haric_fiyat": 1411.16,
+                "kdv_dahil_fiyat": 1552.276,
                 "liste_turu": "ek2b"
             },
             {
@@ -14878,6 +15136,12 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "619250",
+                "kdv_haric_fiyat": 4636.06,
+                "kdv_dahil_fiyat": 5099.666,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "619260",
                 "kdv_haric_fiyat": 3710.16,
                 "kdv_dahil_fiyat": 4081.176,
@@ -14938,6 +15202,12 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "619350",
+                "kdv_haric_fiyat": 1670.53,
+                "kdv_dahil_fiyat": 1837.583,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "619360",
                 "kdv_haric_fiyat": 3094.61,
                 "kdv_dahil_fiyat": 3404.071,
@@ -14962,6 +15232,18 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "619390",
+                "kdv_haric_fiyat": 8280.66,
+                "kdv_dahil_fiyat": 9108.726,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "619400",
+                "kdv_haric_fiyat": 11829.67,
+                "kdv_dahil_fiyat": 13012.637,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "619400",
                 "kdv_haric_fiyat": 11829.67,
                 "kdv_dahil_fiyat": 13012.637,
@@ -14980,6 +15262,18 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "619415",
+                "kdv_haric_fiyat": 1270.02,
+                "kdv_dahil_fiyat": 1397.022,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "619420",
+                "kdv_haric_fiyat": 7239.05,
+                "kdv_dahil_fiyat": 7962.955,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "619420",
                 "kdv_haric_fiyat": 7239.05,
                 "kdv_dahil_fiyat": 7962.955,
@@ -14989,6 +15283,18 @@
                 "islem_kodu": "619430",
                 "kdv_haric_fiyat": 5030.02,
                 "kdv_dahil_fiyat": 5533.022,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "619430",
+                "kdv_haric_fiyat": 5030.02,
+                "kdv_dahil_fiyat": 5533.022,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "619440",
+                "kdv_haric_fiyat": 3772.52,
+                "kdv_dahil_fiyat": 4149.772,
                 "liste_turu": "ek2b"
             },
             {
@@ -15043,6 +15349,18 @@
                 "islem_kodu": "619520",
                 "kdv_haric_fiyat": 406.47,
                 "kdv_dahil_fiyat": 447.117,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "619520",
+                "kdv_haric_fiyat": 406.47,
+                "kdv_dahil_fiyat": 447.117,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "619530",
+                "kdv_haric_fiyat": 348.19,
+                "kdv_dahil_fiyat": 383.009,
                 "liste_turu": "ek2b"
             },
             {
@@ -15142,6 +15460,18 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "619681",
+                "kdv_haric_fiyat": 4073.09,
+                "kdv_dahil_fiyat": 4480.399,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "619682",
+                "kdv_haric_fiyat": 4073.09,
+                "kdv_dahil_fiyat": 4480.399,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "619682",
                 "kdv_haric_fiyat": 4073.09,
                 "kdv_dahil_fiyat": 4480.399,
@@ -15169,6 +15499,12 @@
                 "islem_kodu": "619720",
                 "kdv_haric_fiyat": 2539.22,
                 "kdv_dahil_fiyat": 2793.142,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "619730",
+                "kdv_haric_fiyat": 3528.18,
+                "kdv_dahil_fiyat": 3880.998,
                 "liste_turu": "ek2b"
             },
             {
@@ -15217,6 +15553,12 @@
                 "islem_kodu": "619800",
                 "kdv_haric_fiyat": 136.92,
                 "kdv_dahil_fiyat": 150.612,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "619810",
+                "kdv_haric_fiyat": 1587.76,
+                "kdv_dahil_fiyat": 1746.536,
                 "liste_turu": "ek2b"
             },
             {
@@ -15541,6 +15883,12 @@
                 "islem_kodu": "620240",
                 "kdv_haric_fiyat": 97.28,
                 "kdv_dahil_fiyat": 107.008,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "620250",
+                "kdv_haric_fiyat": 549.82,
+                "kdv_dahil_fiyat": 604.802,
                 "liste_turu": "ek2b"
             },
             {
@@ -16138,6 +16486,12 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "621071",
+                "kdv_haric_fiyat": 258.19,
+                "kdv_dahil_fiyat": 284.009,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "621080",
                 "kdv_haric_fiyat": 740.72,
                 "kdv_dahil_fiyat": 814.792,
@@ -16204,6 +16558,18 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "621180",
+                "kdv_haric_fiyat": 3528.18,
+                "kdv_dahil_fiyat": 3880.998,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "621190",
+                "kdv_haric_fiyat": 2822.28,
+                "kdv_dahil_fiyat": 3104.508,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "621190",
                 "kdv_haric_fiyat": 2822.28,
                 "kdv_dahil_fiyat": 3104.508,
@@ -16219,6 +16585,18 @@
                 "islem_kodu": "621210",
                 "kdv_haric_fiyat": 4410.07,
                 "kdv_dahil_fiyat": 4851.077,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "621210",
+                "kdv_haric_fiyat": 4410.07,
+                "kdv_dahil_fiyat": 4851.077,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "621220",
+                "kdv_haric_fiyat": 2646.25,
+                "kdv_dahil_fiyat": 2910.875,
                 "liste_turu": "ek2b"
             },
             {
@@ -16255,6 +16633,12 @@
                 "islem_kodu": "621270",
                 "kdv_haric_fiyat": 12765.68,
                 "kdv_dahil_fiyat": 14042.248,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "621280",
+                "kdv_haric_fiyat": 2998.9,
+                "kdv_dahil_fiyat": 3298.79,
                 "liste_turu": "ek2b"
             },
             {
@@ -16354,6 +16738,12 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "621420",
+                "kdv_haric_fiyat": 1764.36,
+                "kdv_dahil_fiyat": 1940.796,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "621430",
                 "kdv_haric_fiyat": 928.5,
                 "kdv_dahil_fiyat": 1021.35,
@@ -16363,6 +16753,12 @@
                 "islem_kodu": "621440",
                 "kdv_haric_fiyat": 1764.36,
                 "kdv_dahil_fiyat": 1940.796,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "621450",
+                "kdv_haric_fiyat": 1411.16,
+                "kdv_dahil_fiyat": 1552.276,
                 "liste_turu": "ek2b"
             },
             {
@@ -16408,9 +16804,21 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "621510",
+                "kdv_haric_fiyat": 1237.83,
+                "kdv_dahil_fiyat": 1361.613,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "621520",
                 "kdv_haric_fiyat": 1547.7,
                 "kdv_dahil_fiyat": 1702.47,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "621530",
+                "kdv_haric_fiyat": 1411.16,
+                "kdv_dahil_fiyat": 1552.276,
                 "liste_turu": "ek2b"
             },
             {
@@ -16516,9 +16924,27 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "621670",
+                "kdv_haric_fiyat": 1764.36,
+                "kdv_dahil_fiyat": 1940.796,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "621680",
                 "kdv_haric_fiyat": 1235.11,
                 "kdv_dahil_fiyat": 1358.621,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "621680",
+                "kdv_haric_fiyat": 1235.11,
+                "kdv_dahil_fiyat": 1358.621,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "621690",
+                "kdv_haric_fiyat": 1237.83,
+                "kdv_dahil_fiyat": 1361.613,
                 "liste_turu": "ek2b"
             },
             {
@@ -16561,6 +16987,12 @@
                 "islem_kodu": "621770",
                 "kdv_haric_fiyat": 1547.7,
                 "kdv_dahil_fiyat": 1702.47,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "621780",
+                "kdv_haric_fiyat": 464.25,
+                "kdv_dahil_fiyat": 510.675,
                 "liste_turu": "ek2b"
             },
             {
@@ -16843,6 +17275,12 @@
                 "islem_kodu": "700500",
                 "kdv_haric_fiyat": 60.21,
                 "kdv_dahil_fiyat": 66.231,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "700510",
+                "kdv_haric_fiyat": 254.79,
+                "kdv_dahil_fiyat": 280.269,
                 "liste_turu": "ek2b"
             },
             {
@@ -19522,9 +19960,21 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "704210",
+                "kdv_haric_fiyat": 1907.47,
+                "kdv_dahil_fiyat": 2098.217,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "704230",
                 "kdv_haric_fiyat": 1315.5,
                 "kdv_dahil_fiyat": 1447.05,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "704230",
+                "kdv_haric_fiyat": 1907.47,
+                "kdv_dahil_fiyat": 2098.217,
                 "liste_turu": "ek2b"
             },
             {
@@ -19543,6 +19993,12 @@
                 "islem_kodu": "704233",
                 "kdv_haric_fiyat": 1315.5,
                 "kdv_dahil_fiyat": 1447.05,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "704233",
+                "kdv_haric_fiyat": 1907.47,
+                "kdv_dahil_fiyat": 2098.217,
                 "liste_turu": "ek2b"
             },
             {
@@ -20314,9 +20770,21 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "705350",
+                "kdv_haric_fiyat": 3996.91,
+                "kdv_dahil_fiyat": 4396.601,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "705351",
                 "kdv_haric_fiyat": 1751.07,
                 "kdv_dahil_fiyat": 1926.177,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "705351",
+                "kdv_haric_fiyat": 2539.05,
+                "kdv_dahil_fiyat": 2792.955,
                 "liste_turu": "ek2b"
             },
             {
@@ -20326,9 +20794,21 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "705352",
+                "kdv_haric_fiyat": 2042.16,
+                "kdv_dahil_fiyat": 2246.376,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "705353",
                 "kdv_haric_fiyat": 959.04,
                 "kdv_dahil_fiyat": 1054.944,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "705353",
+                "kdv_haric_fiyat": 1390.61,
+                "kdv_dahil_fiyat": 1529.671,
                 "liste_turu": "ek2b"
             },
             {
@@ -20338,9 +20818,21 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "705354",
+                "kdv_haric_fiyat": 1357.03,
+                "kdv_dahil_fiyat": 1492.733,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "705355",
                 "kdv_haric_fiyat": 644.0,
                 "kdv_dahil_fiyat": 708.4,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "705355",
+                "kdv_haric_fiyat": 933.8,
+                "kdv_dahil_fiyat": 1027.18,
                 "liste_turu": "ek2b"
             },
             {
@@ -20350,9 +20842,21 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "705360",
+                "kdv_haric_fiyat": 1081.19,
+                "kdv_dahil_fiyat": 1189.309,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "705370",
                 "kdv_haric_fiyat": 976.05,
                 "kdv_dahil_fiyat": 1073.655,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "705370",
+                "kdv_haric_fiyat": 1415.27,
+                "kdv_dahil_fiyat": 1556.797,
                 "liste_turu": "ek2b"
             },
             {
@@ -20362,9 +20866,21 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "705371",
+                "kdv_haric_fiyat": 3305.67,
+                "kdv_dahil_fiyat": 3636.237,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "705372",
                 "kdv_haric_fiyat": 995.09,
                 "kdv_dahil_fiyat": 1094.599,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "705372",
+                "kdv_haric_fiyat": 1442.88,
+                "kdv_dahil_fiyat": 1587.168,
                 "liste_turu": "ek2b"
             },
             {
@@ -20374,9 +20890,21 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "705373",
+                "kdv_haric_fiyat": 1222.43,
+                "kdv_dahil_fiyat": 1344.673,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "705380",
                 "kdv_haric_fiyat": 60.26,
                 "kdv_dahil_fiyat": 66.286,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "705380",
+                "kdv_haric_fiyat": 87.37,
+                "kdv_dahil_fiyat": 96.107,
                 "liste_turu": "ek2b"
             },
             {
@@ -20386,9 +20914,21 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "705390",
+                "kdv_haric_fiyat": 505.35,
+                "kdv_dahil_fiyat": 555.885,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "705400",
                 "kdv_haric_fiyat": 547.1,
                 "kdv_dahil_fiyat": 601.81,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "705400",
+                "kdv_haric_fiyat": 793.3,
+                "kdv_dahil_fiyat": 872.63,
                 "liste_turu": "ek2b"
             },
             {
@@ -20398,9 +20938,21 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "705410",
+                "kdv_haric_fiyat": 1081.19,
+                "kdv_dahil_fiyat": 1189.309,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "705420",
                 "kdv_haric_fiyat": 482.58,
                 "kdv_dahil_fiyat": 530.838,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "705420",
+                "kdv_haric_fiyat": 699.73,
+                "kdv_dahil_fiyat": 769.703,
                 "liste_turu": "ek2b"
             },
             {
@@ -20410,9 +20962,21 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "705430",
+                "kdv_haric_fiyat": 840.52,
+                "kdv_dahil_fiyat": 924.572,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "705431",
                 "kdv_haric_fiyat": 319.97,
                 "kdv_dahil_fiyat": 351.967,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "705431",
+                "kdv_haric_fiyat": 463.96,
+                "kdv_dahil_fiyat": 510.356,
                 "liste_turu": "ek2b"
             },
             {
@@ -20422,9 +20986,21 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "705432",
+                "kdv_haric_fiyat": 338.51,
+                "kdv_dahil_fiyat": 372.361,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "705440",
                 "kdv_haric_fiyat": 579.68,
                 "kdv_dahil_fiyat": 637.648,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "705440",
+                "kdv_haric_fiyat": 840.52,
+                "kdv_dahil_fiyat": 924.572,
                 "liste_turu": "ek2b"
             },
             {
@@ -20434,15 +21010,33 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "705441",
+                "kdv_haric_fiyat": 1899.45,
+                "kdv_dahil_fiyat": 2089.395,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "705442",
                 "kdv_haric_fiyat": 3175.73,
                 "kdv_dahil_fiyat": 3493.303,
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "705442",
+                "kdv_haric_fiyat": 4604.81,
+                "kdv_dahil_fiyat": 5065.291,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "705443",
                 "kdv_haric_fiyat": 4467.32,
                 "kdv_dahil_fiyat": 4914.052,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "705443",
+                "kdv_haric_fiyat": 6477.62,
+                "kdv_dahil_fiyat": 7125.382,
                 "liste_turu": "ek2b"
             },
             {
@@ -20947,6 +21541,12 @@
                 "islem_kodu": "800730",
                 "kdv_haric_fiyat": 607.36,
                 "kdv_dahil_fiyat": 668.096,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "800735",
+                "kdv_haric_fiyat": 71471.63,
+                "kdv_dahil_fiyat": 78618.793,
                 "liste_turu": "ek2b"
             },
             {
@@ -21688,6 +22288,12 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "801545",
+                "kdv_haric_fiyat": 122323.7,
+                "kdv_dahil_fiyat": 134556.07,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "801546",
                 "kdv_haric_fiyat": 355.61,
                 "kdv_dahil_fiyat": 391.171,
@@ -21724,6 +22330,12 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "801561",
+                "kdv_haric_fiyat": 35.9,
+                "kdv_dahil_fiyat": 39.49,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "801570",
                 "kdv_haric_fiyat": 61.03,
                 "kdv_dahil_fiyat": 67.133,
@@ -21739,6 +22351,18 @@
                 "islem_kodu": "801590",
                 "kdv_haric_fiyat": 101.76,
                 "kdv_dahil_fiyat": 111.936,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801590",
+                "kdv_haric_fiyat": 101.76,
+                "kdv_dahil_fiyat": 111.936,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801592",
+                "kdv_haric_fiyat": 152.64,
+                "kdv_dahil_fiyat": 167.904,
                 "liste_turu": "ek2b"
             },
             {
@@ -21766,6 +22390,24 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "801631",
+                "kdv_haric_fiyat": 35.9,
+                "kdv_dahil_fiyat": 39.49,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801632",
+                "kdv_haric_fiyat": 35.9,
+                "kdv_dahil_fiyat": 39.49,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801633",
+                "kdv_haric_fiyat": 35.9,
+                "kdv_dahil_fiyat": 39.49,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "801640",
                 "kdv_haric_fiyat": 228.68,
                 "kdv_dahil_fiyat": 251.548,
@@ -21781,6 +22423,150 @@
                 "islem_kodu": "801660",
                 "kdv_haric_fiyat": 91.58,
                 "kdv_dahil_fiyat": 100.738,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801661",
+                "kdv_haric_fiyat": 46.09,
+                "kdv_dahil_fiyat": 50.699,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801662",
+                "kdv_haric_fiyat": 46.09,
+                "kdv_dahil_fiyat": 50.699,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801663",
+                "kdv_haric_fiyat": 69.13,
+                "kdv_dahil_fiyat": 76.043,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801664",
+                "kdv_haric_fiyat": 69.13,
+                "kdv_dahil_fiyat": 76.043,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801665",
+                "kdv_haric_fiyat": 46.09,
+                "kdv_dahil_fiyat": 50.699,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801666",
+                "kdv_haric_fiyat": 69.13,
+                "kdv_dahil_fiyat": 76.043,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801667",
+                "kdv_haric_fiyat": 46.09,
+                "kdv_dahil_fiyat": 50.699,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801668",
+                "kdv_haric_fiyat": 46.09,
+                "kdv_dahil_fiyat": 50.699,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801669",
+                "kdv_haric_fiyat": 69.13,
+                "kdv_dahil_fiyat": 76.043,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801671",
+                "kdv_haric_fiyat": 69.13,
+                "kdv_dahil_fiyat": 76.043,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801672",
+                "kdv_haric_fiyat": 46.09,
+                "kdv_dahil_fiyat": 50.699,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801673",
+                "kdv_haric_fiyat": 69.13,
+                "kdv_dahil_fiyat": 76.043,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801674",
+                "kdv_haric_fiyat": 46.09,
+                "kdv_dahil_fiyat": 50.699,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801675",
+                "kdv_haric_fiyat": 46.09,
+                "kdv_dahil_fiyat": 50.699,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801676",
+                "kdv_haric_fiyat": 69.13,
+                "kdv_dahil_fiyat": 76.043,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801677",
+                "kdv_haric_fiyat": 69.13,
+                "kdv_dahil_fiyat": 76.043,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801678",
+                "kdv_haric_fiyat": 46.09,
+                "kdv_dahil_fiyat": 50.699,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801679",
+                "kdv_haric_fiyat": 69.13,
+                "kdv_dahil_fiyat": 76.043,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801681",
+                "kdv_haric_fiyat": 46.09,
+                "kdv_dahil_fiyat": 50.699,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801682",
+                "kdv_haric_fiyat": 46.09,
+                "kdv_dahil_fiyat": 50.699,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801683",
+                "kdv_haric_fiyat": 69.13,
+                "kdv_dahil_fiyat": 76.043,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801684",
+                "kdv_haric_fiyat": 69.13,
+                "kdv_dahil_fiyat": 76.043,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801685",
+                "kdv_haric_fiyat": 46.09,
+                "kdv_dahil_fiyat": 50.699,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801686",
+                "kdv_haric_fiyat": 69.13,
+                "kdv_dahil_fiyat": 76.043,
                 "liste_turu": "ek2b"
             },
             {
@@ -21823,6 +22609,240 @@
                 "islem_kodu": "801740",
                 "kdv_haric_fiyat": 46.09,
                 "kdv_dahil_fiyat": 50.699,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801741",
+                "kdv_haric_fiyat": 46.09,
+                "kdv_dahil_fiyat": 50.699,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801742",
+                "kdv_haric_fiyat": 71.21,
+                "kdv_dahil_fiyat": 78.331,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801743",
+                "kdv_haric_fiyat": 71.21,
+                "kdv_dahil_fiyat": 78.331,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801744",
+                "kdv_haric_fiyat": 35.9,
+                "kdv_dahil_fiyat": 39.49,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801745",
+                "kdv_haric_fiyat": 35.9,
+                "kdv_dahil_fiyat": 39.49,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801746",
+                "kdv_haric_fiyat": 53.85,
+                "kdv_dahil_fiyat": 59.235,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801747",
+                "kdv_haric_fiyat": 53.85,
+                "kdv_dahil_fiyat": 59.235,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801748",
+                "kdv_haric_fiyat": 35.9,
+                "kdv_dahil_fiyat": 39.49,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801749",
+                "kdv_haric_fiyat": 53.85,
+                "kdv_dahil_fiyat": 59.235,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801751",
+                "kdv_haric_fiyat": 35.9,
+                "kdv_dahil_fiyat": 39.49,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801752",
+                "kdv_haric_fiyat": 35.9,
+                "kdv_dahil_fiyat": 39.49,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801753",
+                "kdv_haric_fiyat": 53.85,
+                "kdv_dahil_fiyat": 59.235,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801754",
+                "kdv_haric_fiyat": 53.85,
+                "kdv_dahil_fiyat": 59.235,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801755",
+                "kdv_haric_fiyat": 35.9,
+                "kdv_dahil_fiyat": 39.49,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801756",
+                "kdv_haric_fiyat": 53.85,
+                "kdv_dahil_fiyat": 59.235,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801757",
+                "kdv_haric_fiyat": 35.9,
+                "kdv_dahil_fiyat": 39.49,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801758",
+                "kdv_haric_fiyat": 35.9,
+                "kdv_dahil_fiyat": 39.49,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801759",
+                "kdv_haric_fiyat": 53.85,
+                "kdv_dahil_fiyat": 59.235,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801761",
+                "kdv_haric_fiyat": 53.85,
+                "kdv_dahil_fiyat": 59.235,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801762",
+                "kdv_haric_fiyat": 35.9,
+                "kdv_dahil_fiyat": 39.49,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801763",
+                "kdv_haric_fiyat": 53.85,
+                "kdv_dahil_fiyat": 59.235,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801764",
+                "kdv_haric_fiyat": 35.9,
+                "kdv_dahil_fiyat": 39.49,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801765",
+                "kdv_haric_fiyat": 35.9,
+                "kdv_dahil_fiyat": 39.49,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801766",
+                "kdv_haric_fiyat": 53.85,
+                "kdv_dahil_fiyat": 59.235,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801767",
+                "kdv_haric_fiyat": 53.85,
+                "kdv_dahil_fiyat": 59.235,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801768",
+                "kdv_haric_fiyat": 35.9,
+                "kdv_dahil_fiyat": 39.49,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801769",
+                "kdv_haric_fiyat": 53.85,
+                "kdv_dahil_fiyat": 59.235,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801771",
+                "kdv_haric_fiyat": 35.9,
+                "kdv_dahil_fiyat": 39.49,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801772",
+                "kdv_haric_fiyat": 35.9,
+                "kdv_dahil_fiyat": 39.49,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801773",
+                "kdv_haric_fiyat": 53.85,
+                "kdv_dahil_fiyat": 59.235,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801774",
+                "kdv_haric_fiyat": 53.85,
+                "kdv_dahil_fiyat": 59.235,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801775",
+                "kdv_haric_fiyat": 35.9,
+                "kdv_dahil_fiyat": 39.49,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801776",
+                "kdv_haric_fiyat": 53.85,
+                "kdv_dahil_fiyat": 59.235,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801777",
+                "kdv_haric_fiyat": 35.9,
+                "kdv_dahil_fiyat": 39.49,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801778",
+                "kdv_haric_fiyat": 35.9,
+                "kdv_dahil_fiyat": 39.49,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801779",
+                "kdv_haric_fiyat": 53.85,
+                "kdv_dahil_fiyat": 59.235,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801781",
+                "kdv_haric_fiyat": 53.85,
+                "kdv_dahil_fiyat": 59.235,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801782",
+                "kdv_haric_fiyat": 35.9,
+                "kdv_dahil_fiyat": 39.49,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801783",
+                "kdv_haric_fiyat": 53.85,
+                "kdv_dahil_fiyat": 59.235,
                 "liste_turu": "ek2b"
             },
             {
@@ -21916,6 +22936,24 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "801891",
+                "kdv_haric_fiyat": 46.09,
+                "kdv_dahil_fiyat": 50.699,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801892",
+                "kdv_haric_fiyat": 69.13,
+                "kdv_dahil_fiyat": 76.043,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801893",
+                "kdv_haric_fiyat": 46.09,
+                "kdv_dahil_fiyat": 50.699,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "801900",
                 "kdv_haric_fiyat": 96.96,
                 "kdv_dahil_fiyat": 106.656,
@@ -21946,6 +22984,18 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "801940",
+                "kdv_haric_fiyat": 152.65,
+                "kdv_dahil_fiyat": 167.915,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801950",
+                "kdv_haric_fiyat": 71.21,
+                "kdv_dahil_fiyat": 78.331,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "801950",
                 "kdv_haric_fiyat": 71.21,
                 "kdv_dahil_fiyat": 78.331,
@@ -21958,9 +23008,33 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "801960",
+                "kdv_haric_fiyat": 46.09,
+                "kdv_dahil_fiyat": 50.699,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "801970",
                 "kdv_haric_fiyat": 96.96,
                 "kdv_dahil_fiyat": 106.656,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801970",
+                "kdv_haric_fiyat": 96.96,
+                "kdv_dahil_fiyat": 106.656,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801971",
+                "kdv_haric_fiyat": 35.9,
+                "kdv_dahil_fiyat": 39.49,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "801972",
+                "kdv_haric_fiyat": 61.03,
+                "kdv_dahil_fiyat": 67.133,
                 "liste_turu": "ek2b"
             },
             {
@@ -22735,6 +23809,12 @@
                 "islem_kodu": "803180",
                 "kdv_haric_fiyat": 2893.54,
                 "kdv_dahil_fiyat": 3182.894,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "803190",
+                "kdv_haric_fiyat": 3422.82,
+                "kdv_dahil_fiyat": 3765.102,
                 "liste_turu": "ek2b"
             },
             {
@@ -33244,9 +34324,27 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "L109960",
+                "kdv_haric_fiyat": 119.7,
+                "kdv_dahil_fiyat": 131.67,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "L109970",
                 "kdv_haric_fiyat": 126.3,
                 "kdv_dahil_fiyat": 138.93,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "L109970",
+                "kdv_haric_fiyat": 126.3,
+                "kdv_dahil_fiyat": 138.93,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "L109980",
+                "kdv_haric_fiyat": 119.7,
+                "kdv_dahil_fiyat": 131.67,
                 "liste_turu": "ek2b"
             },
             {
@@ -33262,7 +34360,25 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "L109990",
+                "kdv_haric_fiyat": 119.7,
+                "kdv_dahil_fiyat": 131.67,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "L110000",
+                "kdv_haric_fiyat": 119.7,
+                "kdv_dahil_fiyat": 131.67,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "L110000",
+                "kdv_haric_fiyat": 119.7,
+                "kdv_dahil_fiyat": 131.67,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "L110010",
                 "kdv_haric_fiyat": 119.7,
                 "kdv_dahil_fiyat": 131.67,
                 "liste_turu": "ek2b"
@@ -39034,6 +40150,12 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "908115",
+                "kdv_haric_fiyat": 567.17,
+                "kdv_dahil_fiyat": 623.887,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "908120",
                 "kdv_haric_fiyat": 567.17,
                 "kdv_dahil_fiyat": 623.887,
@@ -40390,6 +41512,18 @@
                 "liste_turu": "ek2b"
             },
             {
+                "islem_kodu": "G101010",
+                "kdv_haric_fiyat": 2549.62,
+                "kdv_dahil_fiyat": 2804.582,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "G101020",
+                "kdv_haric_fiyat": 4332.84,
+                "kdv_dahil_fiyat": 4766.124,
+                "liste_turu": "ek2b"
+            },
+            {
                 "islem_kodu": "G101020",
                 "kdv_haric_fiyat": 4332.84,
                 "kdv_dahil_fiyat": 4766.124,
@@ -40399,6 +41533,18 @@
                 "islem_kodu": "G101030",
                 "kdv_haric_fiyat": 6060.31,
                 "kdv_dahil_fiyat": 6666.341,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "G101030",
+                "kdv_haric_fiyat": 6060.31,
+                "kdv_dahil_fiyat": 6666.341,
+                "liste_turu": "ek2b"
+            },
+            {
+                "islem_kodu": "G101040",
+                "kdv_haric_fiyat": 8492.95,
+                "kdv_dahil_fiyat": 9342.245,
                 "liste_turu": "ek2b"
             },
             {
@@ -42990,7 +44136,7 @@
         ]
     },
     "ek2c": {
-        "2025-01-28 14:13:00": [
+        "2025-03-17 13:06:16": [
             {
                 "islem_kodu": "P550970",
                 "kdv_haric_fiyat": 7327.36,
@@ -43433,6 +44579,12 @@
                 "islem_kodu": "P600800",
                 "kdv_haric_fiyat": 4030.03,
                 "kdv_dahil_fiyat": 4433.033,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P600830",
+                "kdv_haric_fiyat": 915.88,
+                "kdv_dahil_fiyat": 1007.468,
                 "liste_turu": "ek2c"
             },
             {
@@ -44453,6 +45605,12 @@
                 "islem_kodu": "P602650",
                 "kdv_haric_fiyat": 28563.07,
                 "kdv_dahil_fiyat": 31419.377,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P602660",
+                "kdv_haric_fiyat": 7411.14,
+                "kdv_dahil_fiyat": 8152.254,
                 "liste_turu": "ek2c"
             },
             {
@@ -47462,6 +48620,12 @@
                 "liste_turu": "ek2c"
             },
             {
+                "islem_kodu": "P607910",
+                "kdv_haric_fiyat": 850.9,
+                "kdv_dahil_fiyat": 935.99,
+                "liste_turu": "ek2c"
+            },
+            {
                 "islem_kodu": "P607920",
                 "kdv_haric_fiyat": 170.15,
                 "kdv_dahil_fiyat": 187.165,
@@ -47487,6 +48651,12 @@
             },
             {
                 "islem_kodu": "P607934",
+                "kdv_haric_fiyat": 7304.65,
+                "kdv_dahil_fiyat": 8035.115,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P607935",
                 "kdv_haric_fiyat": 7304.65,
                 "kdv_dahil_fiyat": 8035.115,
                 "liste_turu": "ek2c"
@@ -47720,9 +48890,27 @@
                 "liste_turu": "ek2c"
             },
             {
+                "islem_kodu": "P608300",
+                "kdv_haric_fiyat": 4978.95,
+                "kdv_dahil_fiyat": 5476.845,
+                "liste_turu": "ek2c"
+            },
+            {
                 "islem_kodu": "P608310",
                 "kdv_haric_fiyat": 2489.09,
                 "kdv_dahil_fiyat": 2737.999,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P608310",
+                "kdv_haric_fiyat": 2489.09,
+                "kdv_dahil_fiyat": 2737.999,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P608320",
+                "kdv_haric_fiyat": 5531.66,
+                "kdv_dahil_fiyat": 6084.826,
                 "liste_turu": "ek2c"
             },
             {
@@ -47738,6 +48926,18 @@
                 "liste_turu": "ek2c"
             },
             {
+                "islem_kodu": "P608330",
+                "kdv_haric_fiyat": 9382.96,
+                "kdv_dahil_fiyat": 10321.256,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P608340",
+                "kdv_haric_fiyat": 12835.0,
+                "kdv_dahil_fiyat": 14118.5,
+                "liste_turu": "ek2c"
+            },
+            {
                 "islem_kodu": "P608340",
                 "kdv_haric_fiyat": 12835.0,
                 "kdv_dahil_fiyat": 14118.5,
@@ -47750,9 +48950,27 @@
                 "liste_turu": "ek2c"
             },
             {
+                "islem_kodu": "P608350",
+                "kdv_haric_fiyat": 10089.57,
+                "kdv_dahil_fiyat": 11098.527,
+                "liste_turu": "ek2c"
+            },
+            {
                 "islem_kodu": "P608360",
                 "kdv_haric_fiyat": 6306.1,
                 "kdv_dahil_fiyat": 6936.71,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P608360",
+                "kdv_haric_fiyat": 6306.1,
+                "kdv_dahil_fiyat": 6936.71,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P608370",
+                "kdv_haric_fiyat": 2794.64,
+                "kdv_dahil_fiyat": 3074.104,
                 "liste_turu": "ek2c"
             },
             {
@@ -53306,6 +54524,12 @@
                 "liste_turu": "ek2c"
             },
             {
+                "islem_kodu": "P617051",
+                "kdv_haric_fiyat": 1320.88,
+                "kdv_dahil_fiyat": 1452.968,
+                "liste_turu": "ek2c"
+            },
+            {
                 "islem_kodu": "P617052",
                 "kdv_haric_fiyat": 2896.76,
                 "kdv_dahil_fiyat": 3186.436,
@@ -53339,6 +54563,12 @@
                 "islem_kodu": "P617130",
                 "kdv_haric_fiyat": 2399.44,
                 "kdv_dahil_fiyat": 2639.384,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P617170",
+                "kdv_haric_fiyat": 3419.24,
+                "kdv_dahil_fiyat": 3761.164,
                 "liste_turu": "ek2c"
             },
             {
@@ -54260,6 +55490,12 @@
                 "liste_turu": "ek2c"
             },
             {
+                "islem_kodu": "P618630",
+                "kdv_haric_fiyat": 13989.29,
+                "kdv_dahil_fiyat": 15388.219,
+                "liste_turu": "ek2c"
+            },
+            {
                 "islem_kodu": "P618640",
                 "kdv_haric_fiyat": 1361.45,
                 "kdv_dahil_fiyat": 1497.595,
@@ -54338,6 +55574,12 @@
                 "liste_turu": "ek2c"
             },
             {
+                "islem_kodu": "P618740",
+                "kdv_haric_fiyat": 18153.06,
+                "kdv_dahil_fiyat": 19968.366,
+                "liste_turu": "ek2c"
+            },
+            {
                 "islem_kodu": "P618750",
                 "kdv_haric_fiyat": 4796.79,
                 "kdv_dahil_fiyat": 5276.469,
@@ -54383,6 +55625,12 @@
                 "islem_kodu": "P618820",
                 "kdv_haric_fiyat": 3156.34,
                 "kdv_dahil_fiyat": 3471.974,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P618830",
+                "kdv_haric_fiyat": 7211.28,
+                "kdv_dahil_fiyat": 7932.408,
                 "liste_turu": "ek2c"
             },
             {
@@ -54446,6 +55694,18 @@
                 "liste_turu": "ek2c"
             },
             {
+                "islem_kodu": "P618910",
+                "kdv_haric_fiyat": 5769.62,
+                "kdv_dahil_fiyat": 6346.582,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P618920",
+                "kdv_haric_fiyat": 1235.52,
+                "kdv_dahil_fiyat": 1359.072,
+                "liste_turu": "ek2c"
+            },
+            {
                 "islem_kodu": "P618920",
                 "kdv_haric_fiyat": 1235.52,
                 "kdv_dahil_fiyat": 1359.072,
@@ -54494,9 +55754,21 @@
                 "liste_turu": "ek2c"
             },
             {
+                "islem_kodu": "P618990",
+                "kdv_haric_fiyat": 1647.37,
+                "kdv_dahil_fiyat": 1812.107,
+                "liste_turu": "ek2c"
+            },
+            {
                 "islem_kodu": "P619000",
                 "kdv_haric_fiyat": 20984.98,
                 "kdv_dahil_fiyat": 23083.478,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P619010",
+                "kdv_haric_fiyat": 4734.14,
+                "kdv_dahil_fiyat": 5207.554,
                 "liste_turu": "ek2c"
             },
             {
@@ -54536,6 +55808,24 @@
                 "liste_turu": "ek2c"
             },
             {
+                "islem_kodu": "P619060",
+                "kdv_haric_fiyat": 6247.98,
+                "kdv_dahil_fiyat": 6872.778,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P619070",
+                "kdv_haric_fiyat": 13918.76,
+                "kdv_dahil_fiyat": 15310.636,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P619070",
+                "kdv_haric_fiyat": 13918.76,
+                "kdv_dahil_fiyat": 15310.636,
+                "liste_turu": "ek2c"
+            },
+            {
                 "islem_kodu": "P619070",
                 "kdv_haric_fiyat": 13918.76,
                 "kdv_dahil_fiyat": 15310.636,
@@ -54569,6 +55859,18 @@
                 "islem_kodu": "P619120",
                 "kdv_haric_fiyat": 7542.25,
                 "kdv_dahil_fiyat": 8296.475,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P619120",
+                "kdv_haric_fiyat": 7542.25,
+                "kdv_dahil_fiyat": 8296.475,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P619130",
+                "kdv_haric_fiyat": 4038.26,
+                "kdv_dahil_fiyat": 4442.086,
                 "liste_turu": "ek2c"
             },
             {
@@ -54650,6 +55952,12 @@
                 "liste_turu": "ek2c"
             },
             {
+                "islem_kodu": "P619250",
+                "kdv_haric_fiyat": 12717.51,
+                "kdv_dahil_fiyat": 13989.261,
+                "liste_turu": "ek2c"
+            },
+            {
                 "islem_kodu": "P619260",
                 "kdv_haric_fiyat": 11027.02,
                 "kdv_dahil_fiyat": 12129.722,
@@ -54710,6 +56018,12 @@
                 "liste_turu": "ek2c"
             },
             {
+                "islem_kodu": "P619350",
+                "kdv_haric_fiyat": 4961.99,
+                "kdv_dahil_fiyat": 5458.189,
+                "liste_turu": "ek2c"
+            },
+            {
                 "islem_kodu": "P619360",
                 "kdv_haric_fiyat": 11027.02,
                 "kdv_dahil_fiyat": 12129.722,
@@ -54725,6 +56039,18 @@
                 "islem_kodu": "P619390",
                 "kdv_haric_fiyat": 19714.96,
                 "kdv_dahil_fiyat": 21686.456,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P619390",
+                "kdv_haric_fiyat": 19714.96,
+                "kdv_dahil_fiyat": 21686.456,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P619400",
+                "kdv_haric_fiyat": 31489.88,
+                "kdv_dahil_fiyat": 34638.868,
                 "liste_turu": "ek2c"
             },
             {
@@ -54746,6 +56072,18 @@
                 "liste_turu": "ek2c"
             },
             {
+                "islem_kodu": "P619415",
+                "kdv_haric_fiyat": 2980.4,
+                "kdv_dahil_fiyat": 3278.44,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P619420",
+                "kdv_haric_fiyat": 21502.09,
+                "kdv_dahil_fiyat": 23652.299,
+                "liste_turu": "ek2c"
+            },
+            {
                 "islem_kodu": "P619420",
                 "kdv_haric_fiyat": 21502.09,
                 "kdv_dahil_fiyat": 23652.299,
@@ -54755,6 +56093,18 @@
                 "islem_kodu": "P619430",
                 "kdv_haric_fiyat": 17918.0,
                 "kdv_dahil_fiyat": 19709.8,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P619430",
+                "kdv_haric_fiyat": 17918.0,
+                "kdv_dahil_fiyat": 19709.8,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P619440",
+                "kdv_haric_fiyat": 9606.6,
+                "kdv_dahil_fiyat": 10567.26,
                 "liste_turu": "ek2c"
             },
             {
@@ -54809,6 +56159,18 @@
                 "islem_kodu": "P619520",
                 "kdv_haric_fiyat": 1298.49,
                 "kdv_dahil_fiyat": 1428.339,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P619520",
+                "kdv_haric_fiyat": 1298.49,
+                "kdv_dahil_fiyat": 1428.339,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P619530",
+                "kdv_haric_fiyat": 1190.13,
+                "kdv_dahil_fiyat": 1309.143,
                 "liste_turu": "ek2c"
             },
             {
@@ -54908,6 +56270,18 @@
                 "liste_turu": "ek2c"
             },
             {
+                "islem_kodu": "P619681",
+                "kdv_haric_fiyat": 12715.87,
+                "kdv_dahil_fiyat": 13987.457,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P619682",
+                "kdv_haric_fiyat": 12715.87,
+                "kdv_dahil_fiyat": 13987.457,
+                "liste_turu": "ek2c"
+            },
+            {
                 "islem_kodu": "P619682",
                 "kdv_haric_fiyat": 12715.87,
                 "kdv_dahil_fiyat": 13987.457,
@@ -54935,6 +56309,12 @@
                 "islem_kodu": "P619720",
                 "kdv_haric_fiyat": 7542.25,
                 "kdv_dahil_fiyat": 8296.475,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P619730",
+                "kdv_haric_fiyat": 10174.03,
+                "kdv_dahil_fiyat": 11191.433,
                 "liste_turu": "ek2c"
             },
             {
@@ -54983,6 +56363,12 @@
                 "islem_kodu": "P619800",
                 "kdv_haric_fiyat": 576.32,
                 "kdv_dahil_fiyat": 633.952,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P619810",
+                "kdv_haric_fiyat": 4734.14,
+                "kdv_dahil_fiyat": 5207.554,
                 "liste_turu": "ek2c"
             },
             {
@@ -55271,6 +56657,12 @@
                 "islem_kodu": "P620240",
                 "kdv_haric_fiyat": 378.13,
                 "kdv_dahil_fiyat": 415.943,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P620250",
+                "kdv_haric_fiyat": 2448.24,
+                "kdv_dahil_fiyat": 2693.064,
                 "liste_turu": "ek2c"
             },
             {
@@ -55868,6 +57260,12 @@
                 "liste_turu": "ek2c"
             },
             {
+                "islem_kodu": "P621071",
+                "kdv_haric_fiyat": 630.25,
+                "kdv_dahil_fiyat": 693.275,
+                "liste_turu": "ek2c"
+            },
+            {
                 "islem_kodu": "P621080",
                 "kdv_haric_fiyat": 2195.72,
                 "kdv_dahil_fiyat": 2415.292,
@@ -55934,6 +57332,18 @@
                 "liste_turu": "ek2c"
             },
             {
+                "islem_kodu": "P621180",
+                "kdv_haric_fiyat": 21475.68,
+                "kdv_dahil_fiyat": 23623.248,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P621190",
+                "kdv_haric_fiyat": 18838.34,
+                "kdv_dahil_fiyat": 20722.174,
+                "liste_turu": "ek2c"
+            },
+            {
                 "islem_kodu": "P621190",
                 "kdv_haric_fiyat": 18838.34,
                 "kdv_dahil_fiyat": 20722.174,
@@ -55949,6 +57359,18 @@
                 "islem_kodu": "P621210",
                 "kdv_haric_fiyat": 14498.2,
                 "kdv_dahil_fiyat": 15948.02,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P621210",
+                "kdv_haric_fiyat": 14498.2,
+                "kdv_dahil_fiyat": 15948.02,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P621220",
+                "kdv_haric_fiyat": 8270.22,
+                "kdv_dahil_fiyat": 9097.242,
                 "liste_turu": "ek2c"
             },
             {
@@ -55985,6 +57407,12 @@
                 "islem_kodu": "P621270",
                 "kdv_haric_fiyat": 41968.92,
                 "kdv_dahil_fiyat": 46165.812,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P621280",
+                "kdv_haric_fiyat": 10685.21,
+                "kdv_dahil_fiyat": 11753.731,
                 "liste_turu": "ek2c"
             },
             {
@@ -56036,6 +57464,12 @@
                 "liste_turu": "ek2c"
             },
             {
+                "islem_kodu": "P621360",
+                "kdv_haric_fiyat": 9076.51,
+                "kdv_dahil_fiyat": 9984.161,
+                "liste_turu": "ek2c"
+            },
+            {
                 "islem_kodu": "P621380",
                 "kdv_haric_fiyat": 3449.06,
                 "kdv_dahil_fiyat": 3793.966,
@@ -56072,6 +57506,12 @@
                 "liste_turu": "ek2c"
             },
             {
+                "islem_kodu": "P621420",
+                "kdv_haric_fiyat": 7542.25,
+                "kdv_dahil_fiyat": 8296.475,
+                "liste_turu": "ek2c"
+            },
+            {
                 "islem_kodu": "P621430",
                 "kdv_haric_fiyat": 26014.86,
                 "kdv_dahil_fiyat": 28616.346,
@@ -56081,6 +57521,12 @@
                 "islem_kodu": "P621440",
                 "kdv_haric_fiyat": 6285.06,
                 "kdv_dahil_fiyat": 6913.566,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P621450",
+                "kdv_haric_fiyat": 4796.79,
+                "kdv_dahil_fiyat": 5276.469,
                 "liste_turu": "ek2c"
             },
             {
@@ -56126,9 +57572,21 @@
                 "liste_turu": "ek2c"
             },
             {
+                "islem_kodu": "P621510",
+                "kdv_haric_fiyat": 3682.02,
+                "kdv_dahil_fiyat": 4050.222,
+                "liste_turu": "ek2c"
+            },
+            {
                 "islem_kodu": "P621520",
                 "kdv_haric_fiyat": 4812.05,
                 "kdv_dahil_fiyat": 5293.255,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P621530",
+                "kdv_haric_fiyat": 4796.79,
+                "kdv_dahil_fiyat": 5276.469,
                 "liste_turu": "ek2c"
             },
             {
@@ -56150,6 +57608,18 @@
                 "liste_turu": "ek2c"
             },
             {
+                "islem_kodu": "P621550",
+                "kdv_haric_fiyat": 6490.63,
+                "kdv_dahil_fiyat": 7139.693,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P621560",
+                "kdv_haric_fiyat": 8821.6,
+                "kdv_dahil_fiyat": 9703.76,
+                "liste_turu": "ek2c"
+            },
+            {
                 "islem_kodu": "P621560",
                 "kdv_haric_fiyat": 8821.6,
                 "kdv_dahil_fiyat": 9703.76,
@@ -56157,6 +57627,18 @@
             },
             {
                 "islem_kodu": "P621570",
+                "kdv_haric_fiyat": 7719.55,
+                "kdv_dahil_fiyat": 8491.505,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P621570",
+                "kdv_haric_fiyat": 7719.55,
+                "kdv_dahil_fiyat": 8491.505,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P621580",
                 "kdv_haric_fiyat": 7719.55,
                 "kdv_dahil_fiyat": 8491.505,
                 "liste_turu": "ek2c"
@@ -56234,9 +57716,27 @@
                 "liste_turu": "ek2c"
             },
             {
+                "islem_kodu": "P621670",
+                "kdv_haric_fiyat": 6285.06,
+                "kdv_dahil_fiyat": 6913.566,
+                "liste_turu": "ek2c"
+            },
+            {
                 "islem_kodu": "P621680",
                 "kdv_haric_fiyat": 4197.52,
                 "kdv_dahil_fiyat": 4617.272,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P621680",
+                "kdv_haric_fiyat": 4197.52,
+                "kdv_dahil_fiyat": 4617.272,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P621690",
+                "kdv_haric_fiyat": 4207.71,
+                "kdv_dahil_fiyat": 4628.481,
                 "liste_turu": "ek2c"
             },
             {
@@ -56279,6 +57779,12 @@
                 "islem_kodu": "P621770",
                 "kdv_haric_fiyat": 3750.1,
                 "kdv_dahil_fiyat": 4125.11,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P621780",
+                "kdv_haric_fiyat": 1647.37,
+                "kdv_dahil_fiyat": 1812.107,
                 "liste_turu": "ek2c"
             },
             {
@@ -57038,6 +58544,12 @@
                 "liste_turu": "ek2c"
             },
             {
+                "islem_kodu": "P702678",
+                "kdv_haric_fiyat": 723.92,
+                "kdv_dahil_fiyat": 796.312,
+                "liste_turu": "ek2c"
+            },
+            {
                 "islem_kodu": "P702679",
                 "kdv_haric_fiyat": 468.91,
                 "kdv_dahil_fiyat": 515.801,
@@ -57056,9 +58568,21 @@
                 "liste_turu": "ek2c"
             },
             {
+                "islem_kodu": "P704210",
+                "kdv_haric_fiyat": 4033.91,
+                "kdv_dahil_fiyat": 4437.301,
+                "liste_turu": "ek2c"
+            },
+            {
                 "islem_kodu": "P704230",
                 "kdv_haric_fiyat": 2782.01,
                 "kdv_dahil_fiyat": 3060.211,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P704230",
+                "kdv_haric_fiyat": 4033.91,
+                "kdv_dahil_fiyat": 4437.301,
                 "liste_turu": "ek2c"
             },
             {
@@ -57077,6 +58601,12 @@
                 "islem_kodu": "P704233",
                 "kdv_haric_fiyat": 2782.01,
                 "kdv_dahil_fiyat": 3060.211,
+                "liste_turu": "ek2c"
+            },
+            {
+                "islem_kodu": "P704233",
+                "kdv_haric_fiyat": 4033.91,
+                "kdv_dahil_fiyat": 4437.301,
                 "liste_turu": "ek2c"
             },
             {
